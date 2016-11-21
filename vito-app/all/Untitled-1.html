@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>vito-app</title>
+<link href="../jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="../jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="../jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="../jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head> 
+<body onLoad="MM_preloadImages('btn_01a.jpg','btn_02a.jpg','btn_03a.jpg','btn_04a.jpg')"> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+	  <h1>日本旅遊簡介</h1>
+	</div>
+	<div data-role="content">
+	  <div data-role="collapsible-set">      </div>
+	</div>
+	<a href="Untitled-2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','btn_01a.jpg',1)"><img src="btn_01.png" width="171" height="60" id="Image1"></a>
+    <a href="Untitled-3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','btn_02a.jpg',1)"><img src="btn_02.png" width="171" height="60" id="Image2"></a>
+    <a href="Untitled-4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','btn_01a.jpg',1)"><img src="btn_01.png" width="171" height="60" id="Image3"></a>
+    <a href="Untitled-5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','btn_03a.jpg',1)"><img src="btn_03.png" width="171" height="60" id="Image4"></a>
+    <a href="Untitled-6.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','btn_04a.jpg',1)"><img src="btn_04.png" width="171" height="60" id="Image5"></a>
+<div data-role="footer">
+    <div data-role="page" id="page1">
+	    <div data-role="footer"><a href="Untitled-1.html">(日本簡介)(</a><a href="Untitled-2.html"> 北海道簡介)( </a><a href="Untitled-3.html">關東地區簡介)( </a><a href="Untitled-4.html">東北地區簡介)( </a><a href="Untitled-5.html">關西地區簡介)( </a><a href="Untitled-6.html">九州地區簡介)(</a> <a href="Untitled-7.html">相關連結)</a></div>
+	  </div>
+	  <h4></h4>
+      <p>本網站刊登之所有文字．圖片資訊均受版權法保護　嚴禁擅自複製．轉載 <br>
+        Copyright © 2016 vito-app Co.,Ltd. All rights reserved	</p>
+	</div>
+</div>
+</body>
+</html>
